@@ -1,11 +1,22 @@
-header{
-    background-color: #027059;
-    padding: 30px;
+header {
+  background-color: #027059;
+  padding: 30px;
+}
 
+.logo img {
+  max-width: 15%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  font-family: "Questrial", serif;
 
 }
 
-.logo img{
-    max-width: 15%;
+nav a{
+
+    text-decoration: none;
 
 }
