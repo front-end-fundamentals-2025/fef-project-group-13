@@ -4,7 +4,7 @@ header {
 }
 
 .logo img {
-  max-width: 15%;
+  max-width: 25%;
 }
 
 nav {
@@ -12,11 +12,15 @@ nav {
   justify-content: center;
   gap: 1em;
   font-family: "Questrial", serif;
+  background-color: #027059;
 
 }
 
 nav a{
 
+    
     text-decoration: none;
+    color: white;
+    margin-bottom: 1%;
 
 }
