@@ -1,19 +1,23 @@
 header {
-  background-color: #027059;
+  display: flex;
+background-color: #027059;
   padding: 30px;
 }
 
 .logo img {
   max-width: 25%;
 }
+
 .icons img{
-    max-width: 3%;
+    max-width: 10%;
+
 }
 
-.icons{
+.icons {
     display: flex;
-align-items: right;
-
+    gap: 0px;
+    align-items: left;
+    margin-right: 0;
 }
 
 
