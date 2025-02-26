@@ -7,6 +7,9 @@ header {
   max-width: 25%;
 }
 
+
+
+/* Categories */
 nav {
   display: flex;
   justify-content: center;
@@ -16,9 +19,9 @@ nav {
 
 }
 
-nav a{
 
-    
+/* Category links */
+nav a{
     text-decoration: none;
     color: white;
     margin-bottom: 1%;
@@ -47,3 +50,14 @@ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 margin-top: 2em;
 
 }
+
+.horse img{
+    max-width: 60%;
+
+}
+
+.horse{
+    display: flex;
+    justify-content: center;
+}
+
