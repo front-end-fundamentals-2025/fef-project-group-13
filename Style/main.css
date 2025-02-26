@@ -24,3 +24,26 @@ nav a{
     margin-bottom: 1%;
 
 }
+
+.boxcontainer{
+
+display: flex;
+justify-content: center;
+gap: 0.5em;
+
+}
+
+.box{
+
+width: 15em;
+height: 15em;
+background-color: rgb(225, 225, 225);
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+border: 1px solid #ccc;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+margin-top: 2em;
+
+}
