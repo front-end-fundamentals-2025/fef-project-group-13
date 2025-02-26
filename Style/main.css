@@ -59,5 +59,13 @@ margin-top: 2em;
 .horse{
     display: flex;
     justify-content: center;
+    margin-top: 5%;
 }
 
+footer{
+    display: flex;
+    border-top: 3px solid#027059;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
