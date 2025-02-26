@@ -6,7 +6,15 @@ header {
 .logo img {
   max-width: 25%;
 }
+.icons img{
+    max-width: 3%;
+}
 
+.icons{
+    display: flex;
+align-items: right;
+
+}
 
 
 /* Categories */
@@ -28,16 +36,14 @@ nav a{
 
 }
 
+/* Contains all ad boxes */
 .boxcontainer{
-
 display: flex;
 justify-content: center;
 gap: 0.5em;
-
 }
-
+/* ad-boxes */
 .box{
-
 width: 15em;
 height: 15em;
 background-color: rgb(225, 225, 225);
@@ -48,19 +54,20 @@ font-weight: bold;
 border: 1px solid #ccc;
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 margin-top: 2em;
-
 }
 
+
+/* Giant horse image */
 .horse img{
     max-width: 60%;
-
 }
-
 .horse{
     display: flex;
     justify-content: center;
     margin-top: 5%;
 }
+
+
 
 footer{
     display: flex;
