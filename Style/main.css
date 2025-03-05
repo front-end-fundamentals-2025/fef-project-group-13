@@ -1,6 +1,8 @@
 header {
   display: flex;
-background-color: #027059;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #027059;
   padding: 30px;
 }
 
@@ -9,15 +11,15 @@ background-color: #027059;
 }
 
 .icons img{
-    max-width: 10%;
+
+max-width: 100%;
 
 }
 
-.icons {
-    display: flex;
-    gap: 0px;
-    align-items: left;
-    margin-right: 0;
+.icons{
+
+display: flex;
+
 }
 
 
@@ -71,6 +73,25 @@ margin-top: 2em;
     margin-top: 5%;
 }
 
+.hoverhorse{
+
+  position: absolute;
+  bottom: 10%;
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+}
+
+.horse:hover .hoverhorse{
+
+opacity: 1;
+
+}
 
 
 footer{
