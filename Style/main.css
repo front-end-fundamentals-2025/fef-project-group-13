@@ -10,7 +10,6 @@ background-color: #027059;
 
 .icons img{
     max-width: 10%;
-
 }
 
 .icons {
@@ -18,14 +17,16 @@ background-color: #027059;
     gap: 0px;
     align-items: left;
     margin-right: 0;
+    
 }
+
 
 
 /* Categories */
 nav {
   display: flex;
   justify-content: center;
-  gap: 1em;
+  gap: 10rem;
   font-family: "Questrial", serif;
   background-color: #027059;
 
