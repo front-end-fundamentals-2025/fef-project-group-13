@@ -1,6 +1,14 @@
+body{
+
+margin: 0;
+
+}
+
 header {
   display: flex;
-background-color: #027059;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #027059;
   padding: 30px;
 }
 
@@ -8,6 +16,7 @@ background-color: #027059;
   max-width: 25%;
 }
 
+<<<<<<< HEAD
 .icons img{
     max-width: 10%;
 }
@@ -22,6 +31,16 @@ background-color: #027059;
 
 
 
+=======
+.icons img {
+  max-width: 10%;
+}
+
+.icons {
+  display: flex;
+}
+
+>>>>>>> 7a1c91c9bc79543755da8a23ccd9b845883c32e8
 /* Categories */
 nav {
   display: flex;
@@ -29,55 +48,73 @@ nav {
   gap: 10rem;
   font-family: "Questrial", serif;
   background-color: #027059;
-
 }
 
-
 /* Category links */
-nav a{
-    text-decoration: none;
-    color: white;
-    margin-bottom: 1%;
-
+nav a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 1%;
 }
 
 /* Contains all ad boxes */
-.boxcontainer{
-display: flex;
-justify-content: center;
-gap: 0.5em;
-}
-/* ad-boxes */
-.box{
-width: 15em;
-height: 15em;
-background-color: rgb(225, 225, 225);
-display: flex;
-align-items: center;
-justify-content: center;
-font-weight: bold;
-border: 1px solid #ccc;
-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-margin-top: 2em;
+.boxcontainer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
 }
 
+.boxcontainer-ecom {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  gap: 0.5em;
+}
+
+/* ad-boxes */
+.box {
+  width: 15em;
+  height: 15em;
+  background-color: rgb(225, 225, 225);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 2em;
+}
 
 /* Giant horse image */
-.horse img{
-    max-width: 60%;
+.horse img {
+  max-width: 60%;
 }
-.horse{
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
+.horse {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
 }
 
+.hoverhorse {
+  position: absolute;
+  bottom: 10%;
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
 
+.horse:hover .hoverhorse {
+  opacity: 1;
+}
 
-footer{
-    display: flex;
-    border-top: 3px solid#027059;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    
+footer {
+  display: flex;
+  border-top: 3px solid#027059;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
