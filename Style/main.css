@@ -16,31 +16,14 @@ header {
   max-width: 25%;
 }
 
-<<<<<<< HEAD
-.icons img{
-    max-width: 10%;
-}
-
-.icons {
-    display: flex;
-    gap: 0px;
-    align-items: left;
-    margin-right: 0;
-    
-}
-
-
-
-=======
 .icons img {
-  max-width: 10%;
+  max-width: 30%;
 }
 
 .icons {
   display: flex;
 }
 
->>>>>>> 7a1c91c9bc79543755da8a23ccd9b845883c32e8
 /* Categories */
 nav {
   display: flex;
@@ -72,17 +55,21 @@ nav a {
   gap: 0.5em;
 }
 
+.box img{
+  max-width: 85%;
+  margin-top: -15%;
+}
+
 /* ad-boxes */
 .box {
   width: 15em;
   height: 15em;
-  background-color: rgb(225, 225, 225);
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
   border: 1px solid #ccc;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   margin-top: 2em;
 }
 
@@ -111,6 +98,9 @@ nav a {
 .horse:hover .hoverhorse {
   opacity: 1;
 }
+
+
+
 
 footer {
   display: flex;
