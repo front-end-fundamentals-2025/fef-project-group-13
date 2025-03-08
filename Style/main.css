@@ -43,7 +43,6 @@ nav a {
   display: flex;
   justify-content: center;
   gap: 0.5em;
-  
 }
 
 .boxcontainer-ecom {
@@ -124,4 +123,8 @@ footer {
   border-top: 3px solid#027059;
   margin-top: 5%;
   margin-bottom: 5%;
+  background-color: #027059;
+  font-family: "Questrial", serif;
+  color: white;
+  padding: 30px;
 }
