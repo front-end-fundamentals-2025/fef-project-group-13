@@ -88,7 +88,7 @@ nav a {
 
 /* Giant horse image */
 .horse img {
-  max-width: 60%;
+  max-width: 40%;
 }
 .horse {
   display: flex;
