@@ -33,15 +33,14 @@
 
 
     </header>
-
     <nav>
         <a href="head.html">Head</a>
         <a href="">Chest</a>
         <a href="">Back</a>
         <a href="">Legs</a>
         <a href="">Accessories</a>
-
     </nav>
+
 
     <main>
       <div class = "bridleImage">
@@ -52,7 +51,7 @@
             </div>
       </div>
 
-      <!-- Product drop down -->
+      <!-- Color drop down -->
        <div class = "dropdown">
           <label for="color">Color:</label>
           <select id="color">
@@ -60,6 +59,7 @@
             <option value="brown">Brown</option>
           </select>
 
+          <!-- Size drop down -->
           <label for="size">Choose: Size</label>
           <select id="size">
             <option value="full">Full</option>
@@ -67,6 +67,15 @@
             <option value="pony">Pony</option>
           </select>
        </div>
+
+       <div class = "quantity">
+        <button class = "button" id="increase">+</button>
+        <button class = "button" id="decrease">-</button>
+        <input type="text" id="quantity" value="1" readonly>
+
+       </div>
+
+
 
 
 
