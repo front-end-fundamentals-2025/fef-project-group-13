@@ -1,5 +1,5 @@
-body{
-margin: 0;
+body {
+  margin: 0;
 }
 
 header {
@@ -49,12 +49,12 @@ nav a {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  justify-content: center;
+  text-align: center;
   gap: 0.5em;
 }
 
-.box img{
-  max-width: 75%;
+.box img {
+  max-width: 65%;
   margin-top: -25%;
 }
 
@@ -62,6 +62,7 @@ nav a {
 .box {
   width: 15em;
   height: 15em;
+  margin: auto;
   background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
@@ -80,11 +81,14 @@ nav a {
   font-style: normal;
 }
 
-
+.boxText a {
+  text-decoration: none;
+  color: #027059;
+}
 
 /* Giant horse image */
 .horse img {
-  max-width: 60%;
+  max-width: 40%;
 }
 .horse {
   display: flex;
@@ -108,21 +112,19 @@ nav a {
   opacity: 1;
 }
 
-
 /* Detail Page Dressage Bridle */
-.bridleImage img{
-
+.bridleImage img {
   max-width: 50%;
   padding: 5%;
 }
-
-
-
-
 
 footer {
   display: flex;
   border-top: 3px solid#027059;
   margin-top: 5%;
   margin-bottom: 5%;
+  background-color: #027059;
+  font-family: "Questrial", serif;
+  color: white;
+  padding: 30px;
 }
