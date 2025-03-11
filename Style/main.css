@@ -122,20 +122,20 @@ nav a {
 
 /* Detail Page Dressage Bridle */
 .bridleImage img {
-  max-width: 50%;
-  padding: 5%;
+  max-width: 40%;
+  padding: 3%;
 }
 
 .bridleImage {
   display: flex;
   flex-direction: row;
-  align-items: flex-start; /* Aligns items at the top */
+  align-items: flex-start;
 }
 
 .bridleDetails {
   display: flex;
-  flex-direction: column; /* Ensures everything stacks vertically */
-  margin-left: 5%; /* Adds spacing between the image and the text/buttons */
+  flex-direction: column;
+  margin-left: 10%;
 }
 
 .bridleText{
@@ -154,28 +154,60 @@ h2{
   color: #027059;
   font-family: "scotch-display", sans-serif;
   font-size: 26px;
-  padding-left: 15%;
-  padding-bottom: 25%;
+}
+
+h3{
+  color: #027059;
+  font-family: "scotch-display", sans-serif;
+  font-size: 20px;
+}
+
+.info{
+  max-width: 70%;
+  color: #000000;
+  font-family: "Questrial", serif;
+  font-size: 18px;
+  padding-bottom: 5%;
 }
 
 
 /* Options for product */
 .Colors{
   color: #027059;
-  font-family: "scotch-display", sans-serif;
+  font-family: "Questrial", serif;
   font-size: 20px;
   padding: 5px;
 }
 .Size{
   color: #027059;
-  font-family: "scotch-display", sans-serif;
+  font-family: "Questrial", serif;
   font-size: 20px;
-  padding: 5px;
+  padding: 10px;
 }
 .quantity{
-  text-align: center; /* Centers the number inside the box */
-  padding: 5px; /* Adds some spacing inside */
-  font-size: 16px; /* Adjusts text size */
+  box-sizing: content-box;
+  padding: 5px;
+  justify-content: center;
+}
+.button{
+  justify-content: left;
+  bottom: 10%;
+  background-color: #027059;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: #027059;
+}
+
+.addtocart{
+  margin-top: 2%;
+  background-color: #027059;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: #027059;
 }
 
 
