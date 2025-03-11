@@ -129,6 +129,13 @@ nav a {
 .bridleImage {
   display: flex;
   flex-direction: row;
+  align-items: flex-start; /* Aligns items at the top */
+}
+
+.bridleDetails {
+  display: flex;
+  flex-direction: column; /* Ensures everything stacks vertically */
+  margin-left: 5%; /* Adds spacing between the image and the text/buttons */
 }
 
 .bridleText{
@@ -148,7 +155,30 @@ h2{
   font-family: "scotch-display", sans-serif;
   font-size: 26px;
   padding-left: 15%;
+  padding-bottom: 25%;
 }
+
+
+/* Options for product */
+.Colors{
+  color: #027059;
+  font-family: "scotch-display", sans-serif;
+  font-size: 20px;
+  padding: 5px;
+}
+.Size{
+  color: #027059;
+  font-family: "scotch-display", sans-serif;
+  font-size: 20px;
+  padding: 5px;
+}
+.quantity{
+  text-align: center; /* Centers the number inside the box */
+  padding: 5px; /* Adds some spacing inside */
+  font-size: 16px; /* Adjusts text size */
+}
+
+
 
 
 footer {

@@ -45,22 +45,24 @@
     <main>
       <div class = "bridleImage">
         <img src="images/Dressage.jpg" alt="Dressage Bridle Image">
+
+        <div class="bridleDetails">
             <div class = "bridelText">
               <h1>Dressage Bridle</h1>
               <h2>Price: 3 099 SEK</h2>
             </div>
-      </div>
-
       <!-- Color drop down -->
-       <div class = "dropdown">
-          <label for="color">Color:</label>
+       <div class = "Colors">
+          <label for="color">Choose Color</label>
           <select id="color">
             <option value="black">Black</option>
             <option value="brown">Brown</option>
           </select>
+        </div>
 
           <!-- Size drop down -->
-          <label for="size">Choose: Size</label>
+        <div class="Size">
+          <label for="size">Choose Size</label>
           <select id="size">
             <option value="full">Full</option>
             <option value="cob">Cob</option>
@@ -68,16 +70,28 @@
           </select>
        </div>
 
+       <!-- Product Quantity logic -->
        <div class = "quantity">
         <button class = "button" id="increase">+</button>
         <input type="text" id="quantity" value="1">
         <button class = "button" id="decrease">-</button>
+        
        </div>
+      
+       
+       <!-- Need Help -->
+      <div id="2">
+       <div class="addtocart">
+        <span onclick=""
+          ><button class="cart" onclick="addToCart(2);" alt="" >Add to cart</button>
+        </span>
+      </div>
+     </div>
+</div>
+      </div>
 
-
-       <button class="cart">Add to cart</button>
-
-
+    
+  
 
 
 
