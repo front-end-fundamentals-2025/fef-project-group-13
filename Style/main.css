@@ -85,6 +85,25 @@ nav a {
   }
 }
 
+
+@keyframes hoverEffect {
+  0% {
+    color: white;
+  }
+  100% {
+    color: black;
+  }
+}
+@keyframes hoverOutEffect {
+  0% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+
+
 /* Chest Page */
 .CImages {
   justify-content: center;
@@ -96,7 +115,6 @@ nav a {
 .CImages img {
   max-width: 40%;
 }
-
 
 
 
@@ -144,6 +162,19 @@ nav a {
 .cartadder img{
   max-width: 30%;
 }
+
+
+
+/* Apply the animation on hover */
+nav a:hover {
+  animation: hoverEffect 0.3s forwards;
+}
+
+/* Apply the reverse animation when not hovering */
+nav a {
+  animation: hoverOutEffect 0.3s forwards;
+}
+
 
 @media screen and (max-width: 1100px) {
   .boxcontainer-ecom {
