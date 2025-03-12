@@ -54,6 +54,22 @@ nav a {
 
 
 
+
+/* Chest Page */
+.CImages {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  margin-top: -15%;
+
+}
+.CImages img {
+  max-width: 40%;
+}
+
+
+
+
 /* Head Page */
 .box img {
   max-width: 65%;
@@ -190,6 +206,11 @@ h3{
   font-size: 16px;
   border: #027059;
 }
+
+
+
+
+
 
 footer {
   display: flex;
