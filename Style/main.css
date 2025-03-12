@@ -111,8 +111,14 @@ nav a {
 }
 
 .addtocart img{
-  scale: 0.5;
+  scale: 0.7;
 }
+
+/* + - images */
+.cartadder img{
+  max-width: 30%;
+}
+
 
 /* Detail Page Dressage Bridle */
 .bridleImage img {
