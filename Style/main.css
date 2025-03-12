@@ -54,12 +54,27 @@ nav a {
   gap: 0.5em;
 }
 
-.fpImage img{
+.fpImage{
+  display: flex;
+  justify-content: center;
+}
+.fpImage img{  
   max-width: 100%;
   padding: 2%;
 }
 
+/* If the display is smaller than 1100 pixels it goes down from 5 to 3 columns */
 @media screen and (max-width: 1100px) {
+  .boxcontainer {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto !important;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
   .boxcontainer {
     display: grid; 
     grid-template-columns: repeat(2, 1fr);
@@ -69,7 +84,6 @@ nav a {
     width: 100%;
   }
 }
-
 
 /* Chest Page */
 .CImages {
