@@ -14,11 +14,9 @@ header {
 .logo img {
   max-width: 25%;
 }
-
 .icons img {
   max-width: 30%;
 }
-
 .icons {
   display: flex;
 }
@@ -58,7 +56,6 @@ nav a {
   max-width: 65%;
   margin-top: -25%;
 }
-
 /* ad-boxes */
 .box {
   width: 15em;
@@ -85,6 +82,12 @@ nav a {
 .boxText a {
   text-decoration: none;
   color: #027059;
+}
+
+.fpImage img{
+  max-width: 150%;
+  padding: 2%;
+  margin-left: 5%;
 }
 
 /* Head Page */
@@ -116,7 +119,6 @@ nav a {
 }
 
 h1{
-  padding: 10px;
   padding-top: 8%;
   color: #027059;
   font-family: "scotch-display", sans-serif;
@@ -132,7 +134,7 @@ h3{
   color: #027059;
   font-family: "Questrial", serif;
   font-size: 20px;
-margin-bottom: -2%;
+  margin-bottom: -2%;
 }
 
 
@@ -158,7 +160,7 @@ margin-bottom: -2%;
   color: #027059;
   font-family: "Questrial", serif;
   font-size: 20px;
-  padding: 10px;
+  padding: 5px;
 }
 .quantity{
   box-sizing: content-box;
