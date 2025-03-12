@@ -87,32 +87,6 @@ nav a {
   color: #027059;
 }
 
-/* Giant horse image */
-.horse img {
-  max-width: 40%;
-}
-.horse {
-  display: flex;
-  justify-content: center;
-  margin-top: 5%;
-}
-
-.hoverhorse {
-  position: absolute;
-  bottom: 10%;
-  background-color: #027059;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  font-size: 16px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.horse:hover .hoverhorse {
-  opacity: 1;
-}
-
 /* Head Page */
 .addtocart img{
   scale: 0.5;
