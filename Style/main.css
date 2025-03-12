@@ -118,8 +118,6 @@ nav a {
   scale: 0.5;
 }
 
-
-
 /* Detail Page Dressage Bridle */
 .bridleImage img {
   max-width: 40%;
@@ -171,7 +169,6 @@ margin-bottom: -2%;
   padding-bottom: 5%;
 }
 
-
 /* Options for product */
 .Colors{
   color: #027059;
@@ -210,9 +207,6 @@ margin-bottom: -2%;
   font-size: 16px;
   border: #027059;
 }
-
-
-
 
 footer {
   display: flex;
