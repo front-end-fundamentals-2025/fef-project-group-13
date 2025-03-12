@@ -85,10 +85,15 @@ nav a {
   }
 }
 
-
+nav a:hover {
+  animation: hoverEffect 0.3s forwards;
+}
+nav a {
+  animation: hoverOutEffect 0.3s forwards;
+}
 @keyframes hoverEffect {
   0% {
-    color: white;
+    color: #ffffff;
   }
   100% {
     color: black;
@@ -99,9 +104,13 @@ nav a {
     color: black;
   }
   100% {
-    color: white;
+    color:#ffffff;
   }
 }
+/* Focuses on the header texts */
+
+
+
 
 
 /* Chest Page */
