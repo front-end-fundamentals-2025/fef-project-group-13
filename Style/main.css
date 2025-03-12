@@ -131,6 +131,27 @@ nav a {
   max-width: 30%;
 }
 
+@media screen and (max-width: 1100px) {
+  .boxcontainer-ecom {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto !important;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .boxcontainer-ecom {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto !important;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
 
 /* Detail Page Dressage Bridle */
 .bridleImage img {
