@@ -34,7 +34,6 @@ function cartAdder(id) {
     prodAmnt[id] = 1;
   }
 
-
   // Update session arrays of prodAmount & total
 
   sessionStorage.setItem("prodAmount", JSON.stringify(prodAmnt));
@@ -45,16 +44,22 @@ function cartAdder(id) {
   cart.innerHTML = total.toString();
 }
 
+// shows product in cart
+
 function showCart() {
   document.getElementById("cartList").innerHTML = "";
+
+  // Shows every product in cart from prodlist and shows its amount
+
   prodlist.forEach(async function (element) {
+    // fetches data from json datafile, and makes it into an object.
     const response = await fetch("product.json");
     let json = await response.json();
     let obj = json.find((product) => product.id === element);
 
     // the html of the cartList element to this:
-    
-        /*<div class="item">
+
+    /*<div class="item">
         <div class="image">
           <img src="images/Dressage.jpg" alt="" />
         </div>
@@ -66,7 +71,7 @@ function showCart() {
           <span class="plus">></span>
         </div>
       </div>*/
-     
+
     let item = document.createElement("div");
     item.classList.add("item");
 
@@ -110,10 +115,10 @@ function showCart() {
     item.appendChild(cartQuantity);
 
     document.getElementById("cartList").appendChild(item);
-
-
   });
 }
+
+// Removes all itens from cart
 
 function cleanCart() {
   prodlist = [];
@@ -124,12 +129,20 @@ function cleanCart() {
   sessionStorage.removeItem("prodAmount");
   sessionStorage.removeItem("total");
   document.getElementById("cartList").innerHTML = "";
+  cart = document.getElementById("cart");
+  cart.innerHTML = "0";
 }
 
-document.getElementById("cartbutton").addEventListener("click", function () {
-  cartAdder(1);
-});
+// Checks for user interaction with cartbtn & removebtn
 
-document.getElementById("removebtn").addEventListener("click", function () {
-  cleanCart();
-});
+if (document.getElementById("cartbutton") != null) {
+  document.getElementById("cartbutton").addEventListener("click", function () {
+    cartAdder(1);
+  });
+}
+
+if (document.getElementById("removebtn") != null) {
+  document.getElementById("removebtn").addEventListener("click", function () {
+    cleanCart();
+  });
+}
