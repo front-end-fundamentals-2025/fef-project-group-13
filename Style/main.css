@@ -181,6 +181,7 @@ nav a {
 /* + - images */
 .cartadder img{
   max-width: 30%;
+  cursor: pointer;
 }
 
 
