@@ -1,6 +1,10 @@
+// prodlist = store item, prodAmnt = quantity of a certain item, total = amout of added items shown
+
 let prodlist = [];
 let prodAmnt = [];
 let total = 0;
+
+// First initilization of corresponding session variables
 
 if (sessionStorage.getItem("products") != null) {
   total = Number(sessionStorage.getItem("total"));
@@ -10,20 +14,33 @@ if (sessionStorage.getItem("products") != null) {
   cart.innerHTML = total.toString();
 }
 
+// Adds to cart
+
 function cartAdder(id) {
   total++;
+
+  // Adds id of item in the product array and updates session array
+
   if (!prodlist.includes(id)) {
     prodlist.push(id);
     sessionStorage.setItem("products", JSON.stringify(prodlist));
   }
+
+  // Adds amount
 
   if (prodAmnt[id] != null) {
     prodAmnt[id]++;
   } else {
     prodAmnt[id] = 1;
   }
+
+
+  // Update session arrays of prodAmount & total
+
   sessionStorage.setItem("prodAmount", JSON.stringify(prodAmnt));
   sessionStorage.setItem("total", total.toString());
+
+  // Sets the number of cart
   cart = document.getElementById("cart");
   cart.innerHTML = total.toString();
 }
@@ -35,6 +52,21 @@ function showCart() {
     let json = await response.json();
     let obj = json.find((product) => product.id === element);
 
+    // the html of the cartList element to this:
+    
+        /*<div class="item">
+        <div class="image">
+          <img src="images/Dressage.jpg" alt="" />
+        </div>
+        <div class="name">Dressage Bridle</div>
+        <div class="totalPrice">3099 SEK</div>
+        <div class="cartQuantity">
+          <span class="minus"><</span>
+          <span>1</span>
+          <span class="plus">></span>
+        </div>
+      </div>*/
+     
     let item = document.createElement("div");
     item.classList.add("item");
 
@@ -59,46 +91,45 @@ function showCart() {
 
     let cartQuantity = document.createElement("div");
     cartQuantity.classList.add("cartQuantity");
+
     let minus = document.createElement("span");
     minus.classList.add("minus");
     cartQuantity.appendChild(minus);
     minus.innerHTML = "<";
+
     let span = document.createElement("span");
     prodAmnt = JSON.parse(sessionStorage.getItem("prodAmount"));
     span.innerHTML = prodAmnt[element];
     cartQuantity.appendChild(span);
+
     let plus = document.createElement("span");
     plus.innerHTML = ">";
     plus.classList.add("plus");
     cartQuantity.appendChild(plus);
+
     item.appendChild(cartQuantity);
 
     document.getElementById("cartList").appendChild(item);
 
-    /*<div class="item">
-        <div class="image">
-          <img src="images/Dressage.jpg" alt="" />
-        </div>
-        <div class="name">Dressage Bridle</div>
-        <div class="totalPrice">3099 SEK</div>
-        <div class="cartQuantity">
-          <span class="minus"><</span>
-          <span>1</span>
-          <span class="plus">></span>
-        </div>
-      </div>*/
+
   });
 }
 
-async function getProduct(id) {
-  const response = await fetch("product.json");
-  let json = await response.json();
+function cleanCart() {
+  prodlist = [];
+  prodAmnt = [];
+  total = 0;
 
-  console.log(json.find((product) => product.id === id));
-
-  return json.find((product) => product.id === id);
+  sessionStorage.removeItem("products");
+  sessionStorage.removeItem("prodAmount");
+  sessionStorage.removeItem("total");
+  document.getElementById("cartList").innerHTML = "";
 }
 
 document.getElementById("cartbutton").addEventListener("click", function () {
   cartAdder(1);
+});
+
+document.getElementById("removebtn").addEventListener("click", function () {
+  cleanCart();
 });
