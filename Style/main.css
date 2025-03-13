@@ -301,7 +301,14 @@ h3{
 }
 
 
-
+/* Checkout page (Shopping Cart) */
+h5{
+  margin-top: 2%;
+  margin-left: 2%;
+  color: #027059;
+  font-family: "scotch-display", sans-serif;
+  font-size: 40px;
+}
 
 
 
