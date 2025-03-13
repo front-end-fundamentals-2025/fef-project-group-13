@@ -4,7 +4,7 @@ let total = 0;
 
 if (sessionStorage.getItem("products") != null) {
   total = Number(sessionStorage.getItem("total"));
-  prodAmnt = JSON.parse(sessionStorage.getItem("prodAmnt"));
+  prodAmnt = JSON.parse(sessionStorage.getItem("prodAmount"));
   prodlist = JSON.parse(sessionStorage.getItem("products"));
   cart = document.getElementById("cart");
   cart.innerHTML = total.toString();
@@ -30,8 +30,11 @@ function cartAdder(id) {
 
 function showCart() {
   document.getElementById("cartList").innerHTML = "";
-  prodlist.forEach((element) => {
-    let obj = getProduct(element);
+  prodlist.forEach(async function (element) {
+    const response = await fetch("product.json");
+    let json = await response.json();
+    let obj = json.find((product) => product.id === element);
+
     let item = document.createElement("div");
     item.classList.add("item");
 
@@ -39,21 +42,21 @@ function showCart() {
     image.classList.add("image");
 
     let img = document.createElement("img");
-    img.src = "images/Dressage.jpg";
+    img.src = obj.image;
 
     image.appendChild(img);
     item.appendChild(image);
-    
+
     let name = document.createElement("div");
     name.classList.add("name");
-    name.innerHTML = "Dressage Bridle";
+    name.innerHTML = obj.name;
     item.appendChild(name);
 
     let totalPrice = document.createElement("div");
     totalPrice.classList.add("totalPrice");
-    totalPrice.innerHTML = "3099";
+    totalPrice.innerHTML = obj.price + " SEK";
     item.appendChild(totalPrice);
-    
+
     let cartQuantity = document.createElement("div");
     cartQuantity.classList.add("cartQuantity");
     let minus = document.createElement("span");
@@ -61,7 +64,8 @@ function showCart() {
     cartQuantity.appendChild(minus);
     minus.innerHTML = "<";
     let span = document.createElement("span");
-    span.innerHTML = "1";
+    prodAmnt = JSON.parse(sessionStorage.getItem("prodAmount"));
+    span.innerHTML = prodAmnt[element];
     cartQuantity.appendChild(span);
     let plus = document.createElement("span");
     plus.innerHTML = ">";
@@ -88,9 +92,11 @@ function showCart() {
 
 async function getProduct(id) {
   const response = await fetch("product.json");
-  const json = await response.json();
+  let json = await response.json();
 
-  return json;
+  console.log(json.find((product) => product.id === id));
+
+  return json.find((product) => product.id === id);
 }
 
 document.getElementById("cartbutton").addEventListener("click", function () {
