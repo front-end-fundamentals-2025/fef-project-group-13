@@ -2,6 +2,8 @@ let prodlist = [];
 
 if (sessionStorage.getItem("products") != null) {
   prodlist = JSON.parse(sessionStorage.getItem("products"));
+  cart = document.getElementById("cart");
+  cart.innerHTML = prodlist.length;
 }
 
 function cartAdder(id) {
