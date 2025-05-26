@@ -9,10 +9,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://use.typekit.net/hrw4vuf.css" />
-  
-  
   </head>
   <body onload="showCart()">
     <header>
@@ -28,9 +29,16 @@
           <img src="images/whiteheart.png" alt="your favourites icon"/>
         </div>
         <div id="i3">
+<<<<<<< HEAD
           <a href="checkout.html">
             <img src="images/shopping-cart.png" alt="your shopping cart icon"/></a>
           <span>0</span>
+=======
+          <a href="checkout.html"
+            ><img src="images/shopping-cart.png" alt="your shopping cart icon"
+          /></a>
+          <span id="cart">0</span>
+>>>>>>> f19d74cb5df4ca1c9248674b859aaead46dc0c5d
         </div>
       </div>
     </header>
@@ -43,6 +51,7 @@
       <a href="leg.html">Legs</a>
       <a href="">Accessories</a>
     </nav>
+<<<<<<< HEAD
  <main>
  <h5>Shopping Cart</h5>
 
@@ -63,12 +72,38 @@
   <button class = "checkoutbtn">Check Out</button>
   
  </section>
+=======
 
+    <h5>Shopping Cart</h5>
 
+    <div id="cartList" class="listCart">
+      <div class="item">
+        <div class="image">
+          <img src="images/Dressage.jpg" alt="" />
+        </div>
+        <div class="name">Dressage Bridle</div>
+        <div class="totalPrice">3099 SEK</div>
+        <div class="cartQuantity">
+          <span class="minus"><</span>
+          <span>1</span>
+          <span class="plus">></span>
+        </div>
+      </div>
+    </div>
+>>>>>>> f19d74cb5df4ca1c9248674b859aaead46dc0c5d
+
+    <button class="checkoutbtn">Check Out</button>
+    <button class="checkoutbtn" id="removebtn" onclick="cleanCart();">
+      Remove items from cart
+    </button>
+
+<<<<<<< HEAD
     
  
 </main>
+=======
+    <main id="main"></main>
+>>>>>>> f19d74cb5df4ca1c9248674b859aaead46dc0c5d
 
-    <footer>© EquiCrown™</footer>
   </body>
 </html>

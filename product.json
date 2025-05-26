@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "name": "Dressage Bridle",
+    "price": 3099,
+    "image": "images/Dressage.jpg"
+  },
+
+  {
+    "id": 2,
+    "name": "Dressage Bridle",
+    "price": 3099,
+    "image": "images/Dressage.jpg"
+  }
+]
