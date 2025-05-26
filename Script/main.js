@@ -17,6 +17,7 @@ function addToCart(id) {
     sessionStorage.setItem("amount" + id, amount.toString());
   }
 
+  
   let total = Number(sessionStorage.getItem("total")) || 0;
   total++;
   sessionStorage.setItem("total", total.toString());
