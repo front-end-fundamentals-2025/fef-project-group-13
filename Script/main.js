@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 document.addEventListener("DOMContentLoaded", () => {
   const amount = sessionStorage.getItem("total") || "0";
@@ -105,7 +104,7 @@ function removeFromCart(id) {
   sessionStorage.removeItem("amount" + id);
   showCart();
 }
-=======
+
 // prodlist = store item, prodAmnt = quantity of a certain item, total = amout of added items shown
 
 let prodlist = [];
@@ -254,4 +253,4 @@ if (document.getElementById("removebtn") != null) {
     cleanCart();
   });
 }
->>>>>>> f19d74cb5df4ca1c9248674b859aaead46dc0c5d
+
