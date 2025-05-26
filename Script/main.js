@@ -20,6 +20,7 @@ function addToCart(id) {
   let total = Number(sessionStorage.getItem("total")) || 0;
   total++;
   sessionStorage.setItem("total", total.toString());
+  
   document.getElementById("amount").innerHTML = total;
   const cartSpan = document.querySelector("#i3 span");
   if (cartSpan) cartSpan.textContent = total;
@@ -42,6 +43,7 @@ function showCart(){
       const amountKey = "amount" + key;
       const amount = sessionStorage.getItem(amountKey);
       
+
       const temp = document.createElement("div");
       temp.innerHTML = sessionStorage.getItem(key);
 
